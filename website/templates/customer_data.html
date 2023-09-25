@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="card" style="margin-top: 20px;">
+    <div class="card-header">
+        <strong>{{ customer_data.first_name }} {{ customer_data.last_name }}</strong>
+    </div>
+    <div class="card-body">
+        <p class="card-text"><strong>Email: </strong>{{ customer_data.email }}</p>
+        <p class="card-text"><strong>Phone: </strong>{{ customer_data.phone }} </p>
+        <p class="card-text"><strong>Address: </strong>{{ customer_data.address }}</p>
+        <p class="card-text"><strong>City: </strong>{{ customer_data.city }}</p>
+        <p class="card-text"><strong>State: </strong>{{ customer_data.state }}</p>
+        <p class="card-text"><strong>Zipcode: </strong>{{ customer_data.zipcode }}</p>
+        <p class="card-text"><strong>Created At: </strong>{{ customer_data.created_at }}</p>
+        <p class="card-text"><strong>ID: </strong>{{ customer_data.id }} </p>
+    </div>
+</div>
+
+<a href="{% url 'home' %}"><button type="button" class="btn btn-dark" style="margin-top: 20px;">Back</button></a>
+<a href="{% url 'update_customer' customer_data.id %}"><button type="button" class="btn btn-dark" style="margin-top: 20px;">Update</button></a>
+<a href="{% url 'delete_customer' customer_data.id %}"><button type="button" class="btn btn-danger" style="margin-top: 20px;">Delete</button></a>
+
+{% endblock %}

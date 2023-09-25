@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<br>
+<div class="col-md-6 offset-md-3">
+    <h1>Update Customer</h1>
+    <form method="POST" action="">
+        
+        {% if field.errors %}
+            {% for field in form %}
+                {% if field.errors %}
+                    {{ field.errors }}
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+            
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn btn-primary">Update</button>
+        <a href="{% url 'home' %}"><button class="btn btn-dark">Back</button></a>
+    </form>
+</div>
+{% endblock %}
