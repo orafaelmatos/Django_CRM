@@ -38,7 +38,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'crm7.urls'
+ROOT_URLCONF = 'crm.urls'
 
 TEMPLATES = [
     {
@@ -56,7 +56,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'crm7.wsgi.application'
+WSGI_APPLICATION = 'crm.wsgi.application'
 
 
 # Database
@@ -64,12 +64,8 @@ WSGI_APPLICATION = 'crm7.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'crm7',
-        'USER': 'postgres',
-        'PASSWORD': 'rafinha162',
-        'HOST': 'localhost',
-        'PORT': 5432
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
