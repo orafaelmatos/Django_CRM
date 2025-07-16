@@ -13,7 +13,7 @@ SECRET_KEY = 'django-insecure-vs=rl1z2_y8cg-j4c$jp0v&w)812&rzr@=l5y9q9ua*l=&4bg9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-crm-f9tm.onrender.com']
+ALLOWED_HOSTS = ['django-crm-f9tm.onrender.com', 'localhost']
 
 CSRF_TRUSTED_ORIGINS = [
     'https://django-crm-f9tm.onrender.com'
@@ -42,6 +42,11 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'crm.urls'
+
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
 
 TEMPLATES = [
     {
