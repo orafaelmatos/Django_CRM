@@ -15,6 +15,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['django-crm-f9tm.onrender.com']
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://django-crm-f9tm.onrender.com'
+]
 
 # Application definition
 
