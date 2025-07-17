@@ -1,29 +1,42 @@
 # Django CRM System
-A basic Customer Relationship Management (CRM) project built with Django and SQLite for educational and practical learning purposes.
 
-## Project Objective
-The main goal of this project is to build a lightweight system for managing clients, simulating real-world scenarios where businesses need to keep track of customer information.
+A lightweight **Customer Relationship Management (CRM)** application built with Django. This project demonstrates essential features for managing client data in a real-world business context, including user authentication, CRUD operations, and a clean, responsive interface.
 
-## The system allows users to:
-  - Log in and log out securely
-  - Register new users
-  -  Create, edit, and delete client records
-  -  Display client data in a clean table view
+---
 
-## Technologies Used
-  - Python 3.x
-  - Django (Web Framework)
-  - SQLite (default database)
-  - Bootstrap (for responsive UI)
+## 🌐 Live Demo
+Access the application here:  
+<a href="https://django-crm-f9tm.onrender.com" target="_blank" style="text-decoration:none; pointer-events:auto; user-select:none;">
+    <strong>👉 https://django-crm.onrender.com</strong>
+</a>
+---
 
-## Features
-  - User authentication (login/logout)
+## 📌 Project Objective
+The purpose of this project is to create a simple yet practical CRM system for educational and testing purposes, providing functionality for user management and client tracking.
+
+---
+
+## ✅ Features
+- **Secure Authentication**
+  - User login and logout
   - User registration
-  - CRUD operations for client data
-  - Client list displayed in table format
+- **Client Management**
+  - Create, edit, and delete client records
+  - View client data in a responsive table
+- **Additional Features**
   - Form validation and error handling
+  - Django Admin panel for advanced management
 
-# Getting Started
+---
+
+## 🛠️ Technologies Used
+- **Backend:** Django (Python 3.x)
+- **Database:** SQLite (default) – easy to switch to PostgreSQL or MySQL
+- **Frontend:** HTML, CSS, Bootstrap for responsive UI
+
+---
+
+# Run locally (Optional)
 1. Clone the Repository
 ```
 bash
@@ -57,14 +70,6 @@ python manage.py runserver
 ```
 Now visit: http://localhost:8000
 
-## Default Credentials (for demo/testing)
-You can create a default superuser to access Django Admin:
-```
-bash
-Copy
-Edit
-python manage.py createsuperuser
-```
 # Notes
 This project uses SQLite, which is built-in and ideal for local or academic use.
 
