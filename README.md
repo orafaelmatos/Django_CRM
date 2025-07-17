@@ -6,9 +6,8 @@ A lightweight **Customer Relationship Management (CRM)** application built with 
 
 ## 🌐 Live Demo
 Access the application here:  
-<a href="https://django-crm-f9tm.onrender.com" target="_blank" style="text-decoration:none; pointer-events:auto; user-select:none;">
-    <strong>👉 https://django-crm.onrender.com</strong>
-</a>
+👉 **[https://django-crm-f9tm.onrender.com](https://django-crm-f9tm.onrender.com)**
+
 ---
 
 ## 📌 Project Objective
