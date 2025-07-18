@@ -37,33 +37,21 @@ The purpose of this project is to create a simple yet practical CRM system for e
 
 # Run locally (Optional)
 1. Clone the Repository
-```
-bash
-Copy
-Edit
-git clone https://github.com/your-username/Django_CRM.git
+```bash
+git clone https://github.com/orafaelmatos/crm-system.git
 cd Django_CRM
 ```
 3. Create and activate a virtual environment
-```
-bash
-Copy
-Edit
+```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 5. Install dependencies
-```
-bash
-Copy
-Edit
+```bash
 pip install -r requirements.txt
 ```
 6. Apply migrations and run the server
-```
-bash
-Copy
-Edit
+```bash
 python manage.py migrate
 python manage.py runserver
 ```
